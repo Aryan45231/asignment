@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans',sans-serif;
+}
+p{
+    width: 80vw;
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+}
+button{
+    padding: 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+button a:hover{
+    color: white;
+    text-decoration: none;
+}
+body{
+    z-index: 1;
+    background-color: whitesmoke;
+    margin-top: -20px;
+}
+/* Navbar */
+.navbar_container{
+    z-index: 2;
+    background-color: rgba(35, 34, 34, 0.883);
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100vw;;
+    height: 35px;   
+    
+}
+.bar{
+   margin-bottom: 10px;
+    border-top: 2px solid white;
+}
+.menu_links{
+   position: relative;
+   top: 0;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+    width: 40p;
+    padding: 0 10px;
+    height: 35px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    transition: all .1s linear;
+}
+.menu_links:hover{
+    align-content: center;
+    padding: 20px 10px;
+   background-color: rgb(93, 92, 92);
+}
+.menu_links a{
+    text-decoration: none;
+    display: flex;
+    font-size: 25p;
+    color: white;
+}
+.menu_links a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.main_hamburger{
+    display: none;
+    position: fixed;
+    top: 0;
+}
+.navbar_sm_container{
+    position: relative;
+    top: 0;
+    min-height: 60px;
+    width: 100vw;;
+    display: flex;    
+   justify-content: center;
+   
+flex-direction: column;
+    background-color:  rgba(35, 34, 34, 0.883);  
+}
+
+.hambergur{
+    position: relative;
+    width: 100vw;
+    height: 0;
+    transition:  all .2s linear;
+    display: flex;
+    background-color:  rgba(35, 34, 34, 0.883);  
+    flex-direction: column;
+    justify-content:  space-evenly; 
+    align-items: flex-start;
+    
+
+}
+.bar{
+    width: 30px;
+margin-bottom: 10px;
+border-top: 2px solid white;
+}
+.ham{
+    color: white;
+
+    height: 200px;
+}
+
+.show_part{
+display: flex;
+justify-content: space-between;
+}
+/* home  banner */
+.homebanner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    background-color: whitesmoke;
+
+}
+.homebanner h1{
+    font-weight: bold;
+    position: relative;
+    font-style:inherit;
+   margin: 20px 0;
+    font-size: 60px
+    
+}
+.homebanner h2{
+    position: relative;
+    font-size: 35px;
+}
+
+
+/* documentation */
+.documentation{
+    background-color: whitesmoke;
+    padding: 30px 20px;
+    width: 100%;;
+    overflow-x:visible;
+    color: white;
+    background-color: rgba(35, 34, 34, 0.883);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.documentation h1{
+        font-size: 40px
+}
+.documentation h2{
+    font-size: 2rem;
+    margin:  40px 0;
+}
+
+.documentation a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 40px 0;
+}
+.documentation h3{
+    margin: 20px 0;
+}
+.documentation  img{
+    width: 70vw;
+    border-radius: 30px;
+}
+
+/* video */
+
+.video{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+.video h1{
+    font-size: 40px;
+    margin: 30px 0;
+}
+.video img{
+    margin: 30px 0;
+    width:70vw;
+    border-radius: 30px;
+}
+/* lecture 8/
+*/
+.lecture{
+    color: white;
+   min-height: 70vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(35, 34, 34, 0.883);;
+}
+.lecture h1{
+    margin: 20px 0;
+}
+
+/* coupun_container */
+.coupun_container{
+   background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+     flex-wrap: wrap;
+}
+.image_of_coupun{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;    
+}
+.image_of_coupun img{
+    padding: 40px;
+    width: 40vw;
+    height: 580px;
+    border-radius: 150px;
+}
+.coupun_written_content{
+    flex: 1;
+
+}
+.coupun_written_content p{
+    text-align: left;
+    width: 80%;
+    line-height: 27px;
+    font-size: 15px;
+}
+.coupun_container h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.margin{
+    height: 1px;
+    background-color: black;
+    width: 80%;
+}
+.coupun_container h5{
+    margin: 20px 0;
+   
+}
+.coupun_container a{
+    text-decoration:  none;
+    color: black;
+     margin-top: 40px;
+}
+.footer{
+    min-height:   35vh;
+    padding:  50px 0;
+    background-color: rgba(35, 34, 34, 0.883);;
+
+}
+.footer_list_container{
+    height: 100%;
+    
+ 
+}
+.footer_list{
+    height: 100%;
+    
+    display: flex;
+    color:  whitesmoke;
+    font-weight: lighter;
+    justify-content: center;
+    align-items: center ;
+    flex-wrap: wrap;
+   
+}
+.list{
+    margin: 0 30px;
+   width: 300px;
+   line-height: 20px;
+   align-items: baseline;
+}
+.list h2{
+    font-size: 24px;
+}
+.list_items{
+    list-style: none;
+margin: 10px 0;
+   padding: 10px 0;
+    border-top: 1px solid black ;
+
+}
+
+
+
+@media(max-width:700px){
+    *{
+    
+        overflow-x: hidden;
+    }
+    .main_hamburger{
+        display: block;
+    }
+    .navbar_container{
+        display: none;
+    }
+    img{
+        width: 90%;
+    }
+    .footer{
+        height: auto;
+        padding: 20px 0;
+        display: none;
+    }
+    .coupun_container img{
+        width: 90vw;
+        height: 400px;
+        flex-direction: column;
+ 
+    }
+    .lecture{
+        flex-direction: column;
+    }
+    .coupun_container{
+        flex-direction: column;
+    }
+    .coupun_written_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20PX 0;
+    }
+    .coupun_written_content p{
+        text-align: center;
+    }
+    .homebanner *{
+        margin: 0;
+    }
+    .homebanner{
+        
+        padding:20PX 0;
+    }
+    .homebanner p{
+        display: none;
+    }
+   
+}

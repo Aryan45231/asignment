@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/search.css" />
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="https:rap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootst
+</head>
+<body>
+    <div class="navbar_container">
+        <div class="menu_links     ">
+            <a href="../index.html">HireUs</a>
+        </div>
+        <div class="menu_links">
+            <a href="#"> Search</a>
+        </div>
+        <div class="menu_links">
+            <a href="./signup.html">Sign-In</a>
+        </div>
+    </div>
+    <div class="main_hamburger">
+        <div class="hambergur" id="1">
+            <div class="menu_links">
+                <a href="#2"> Search</a>
+            </div>
+            <div class="menu_links">
+                <a href="./signup.html">Sign-In</a>
+            </div>
+        </div>
+
+        <div class="navbar_sm_container">
+
+            <div class="show_part">
+                <div class="menu_links">
+                    <a href="../index.html">HireUs</a>
+                </div>
+                <div class="hamicon" onclick="fun()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form id="search-form">
+          <label for="location">Location:</label>
+          <input onkeydown="search(this)" type="text" id="location" placeholder="Enter location">
+          <br>
+          <label for="job-role">Job Role:</label>
+          <input type="text" onkeypress="search(this)" id="job-role" placeholder="Enter job role">
+          <br>
+        </form>
+    
+        <h3>Fetched Candidates</h3>
+        <ul id="candidates-list">
+        </ul>
+      </div>
+</body>
+
+<script>
+    function fun(){
+      document.getElementById("1").classList.toggle("ham")
+      
+    }
+</script>
+<script type="text/javascript" src="../javascript/search.js" ></script>
+</html>
